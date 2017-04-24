@@ -1,0 +1,28 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "this webpack demo for react",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --config build/webpack.config.js --content-base build --open",
+    "build": "node build/webpack.config.js"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "Neo",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
