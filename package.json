@@ -4,8 +4,9 @@
   "description": "this webpack demo for react",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --config build/webpack.config.js --content-base build --open",
-    "build": "node build/webpack.config.js"
+    "pro-dev": "webpack-dev-server --inline --config build/webpack.config.js --content-base build --open",
+    "dev": "node build/dev.js",
+    "build": "node build/build.js"
   },
   "keywords": [
     "react",
@@ -16,13 +17,37 @@
   "dependencies": {
     "@types/react": "^15.0.22",
     "@types/react-dom": "^15.5.0",
+    "css-loader": "^0.28.0",
+    "express": "^4.15.2",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "ip": "^1.1.5",
+    "node-sass": "^4.5.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "sass": "^0.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1"
   },
   "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.0.15",
+    "babel-runtime": "^6.11.6",
+    "nib": "^1.1.2",
+    "ora": "^0.2.0",
+    "serve": "^1.4.0",
+    "shelljs": "^0.7.7",
     "source-map-loader": "^0.2.1",
     "ts-loader": "^2.0.3",
     "typescript": "^2.2.2",
-    "webpack-dev-server": "^2.4.4"
+    "url-loader": "^0.5.7",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-dev-server": "^2.4.4",
+    "webpack-hot-middleware": "^2.6.0",
+    "webpack-merge": "^4.1.0"
   }
 }

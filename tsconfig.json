@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "dist",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
-    "target": "es5",
-    "jsx": "react"
+    "target": "es6",
+    "jsx": "react",
+    "removeComments": false,
+    "preserveConstEnums": true
   },
   "files": [
     "./src/app.tsx"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
   ]
 }
