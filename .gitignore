@@ -11,7 +11,6 @@ node_modules
 dist
 *log
 .npm
-build/*
 
 # Runtime data
 pids
