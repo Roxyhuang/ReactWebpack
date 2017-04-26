@@ -8,15 +8,15 @@ const config = {
   },
   output: {
     filename: 'bundle.js',
-    path: '/dist',
+    path: path.resolve(__dirname, '../dist'),
     // path: path.resolve('/dist'),
     publicPath: '/'
   },
   devtool:'source-map',
   module: {
-    // preLoaders: [
-    //   { test: /\.js$/, loader: 'source-map-loader' }
-    // ],
+    preLoaders: [
+      { test: /\.js$/, loader: 'source-map-loader' }
+    ],
     loaders: [
       {
         test: /\.tsx?$/,
@@ -47,7 +47,7 @@ const config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      filename:  path.resolve('/dist/index.html'),
+      filename:  path.resolve('./dist/index.html'),
       template: 'index.html',
       inject: true,
       minify: {

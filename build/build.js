@@ -20,7 +20,6 @@ mkdir('-p', assetsPath);
 cp('-R', 'assets/', assetsPath);
 
 webpack((webpackConfig), function (err, stats) {
-  console.log(err);
   spinner.stop();
   if (err) throw err;
   process.stdout.write(stats.toString({
