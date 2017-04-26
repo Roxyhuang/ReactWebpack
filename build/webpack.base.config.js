@@ -14,10 +14,23 @@ const config = {
   },
   devtool:'source-map',
   module: {
-    preLoaders: [
-      { test: /\.js$/, loader: 'source-map-loader' }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.tsx$/,
+    //     loader: 'tslint',
+    //     exclude: [/node_modules/]
+    //   }
+    // ],
     loaders: [
+      {
+        test: /\.tsx$/,
+        loader: 'tslint-loader',
+        exclude: [/node_modules/],
+        enforce: 'pre',
+      },
+      {
+        test: /\.js$/, loader: 'source-map-loader'
+      },
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
