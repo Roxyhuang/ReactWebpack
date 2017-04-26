@@ -13,6 +13,10 @@ const config = {
     publicPath: '/'
   },
   devtool:'source-map',
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ["tsx",".ts", ".js", ".json", ".css", ".scss", ".html"]
+  },
   module: {
     // preLoaders: [
     //   {
